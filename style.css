@@ -1,0 +1,24 @@
+body {
+    font-family: 'Inter', sans-serif; 
+}
+
+.container {
+    padding: 1em;
+}
+
+#adjectives {
+    color: darkslategrey;
+}
+
+#adverbs {
+    color: violet;
+}
+
+#nouns {
+    color: blue;
+}
+
+#verbs {
+    color: red;
+}
+
