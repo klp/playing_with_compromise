@@ -28,7 +28,7 @@ outputAdverbs.forEach(function(adverb) {
     $("#adverbs").append(adverb + " ");
 });
 
-outputNouns.forEach(function(noun) {
+outputNouns.forEach(function    (noun) {
     $("#nouns").append(noun + " ");
 });
 
