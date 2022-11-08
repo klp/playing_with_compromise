@@ -1,11 +1,8 @@
 const doc = nlp(text);
-
-    // TODO: function to replace this non-sense repeating
 const adjectives = doc.adjectives().out('array');
 const adverbs = doc.adverbs().out('array');
 const nouns = doc.nouns().out('array');
 const verbs = doc.verbs().out('array');
-// console.log(verbs);
 
 const outputAdjectives = adjectives.map(function(adjective){
     return adjective;
@@ -19,10 +16,7 @@ const outputNouns = nouns.map(function(noun){
     return noun;
 });
 
-    // TODO: write a function to replace the repeating
-
 const outputVerbs = verbs.map(function(verb){
-    // TODO: strip out periods, commas, quotation marks 
     return verb;
 });
 
