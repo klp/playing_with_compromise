@@ -1,4 +1,4 @@
-const doc = nlp(text);
+const doc = nlp(repairText);
 const adjectives = doc.adjectives().out('array');
 const adverbs = doc.adverbs().out('array');
 const nouns = doc.nouns().out('array');

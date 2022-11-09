@@ -307,3 +307,18 @@ me my change!
 There was a violent explosion in the street outside. The shopwomen
 cowered behind the counters. But Clarissa, sitting very up-right, smiled
 at the other lady. "Miss Anstruther!" she exclaimed.`
+
+const lowerCaseText = text.toLowerCase();
+
+const repairText = lowerCaseText
+    .replaceAll('"', '')
+    .replaceAll('--', '')
+    .replaceAll('?', '')
+    .replaceAll(")", '')
+    .replaceAll('!', '')
+    .replaceAll('.', '')
+    .replaceAll(',', '')
+    .replaceAll(';', '')
+    .replaceAll('_', '')
+    .replaceAll('-', '')
+    .replaceAll('(', '');
