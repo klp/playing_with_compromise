@@ -849,5 +849,6 @@ const repairText = lowerCaseText
     .replaceAll('_', '')
     .replaceAll('-', '')
     .replaceAll('—', '')
+    .replaceAll('“', '')
     .replaceAll('”', '')
     .replaceAll('(', '');
