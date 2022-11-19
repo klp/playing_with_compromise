@@ -4,17 +4,27 @@ body {
 }
 
 h1, h2, p {
-    color: aliceblue
+    color: aliceblue;
+}
+
+a {
+    color: cornflowerblue;
+}
+
+a:hover {
+    color:lightskyblue;
 }
 
 .container {
     padding: 1em, 1.5em, 1em, 1em;
-    background-color: #f9f6f2;
+    background-color: #3b3b3a;
     text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 #adjectives {
-    color: darkslategrey;
+    color: lightgray;
 }
 
 #adverbs {
@@ -22,10 +32,10 @@ h1, h2, p {
 }
 
 #nouns {
-    color: blue;
+    color: cornflowerblue;
 }
 
 #verbs {
-    color: red;
+    color:crimson;
 }
 
