@@ -15,12 +15,22 @@ a:hover {
     color:lightskyblue;
 }
 
+li {
+    padding: 1em, 1.5em, 1em, 1.5em;
+    margin: 1em, 1.5em, 1em, 1.5em;
+}
+
 .container {
     padding: 1em, 1.5em, 1em, 1em;
     background-color: #3b3b3a;
     text-align: justify;
     max-width: 800px;
     margin: 0 auto;
+    color:antiquewhite;
+}
+
+.adjective-color {
+    color:darkcyan;
 }
 
 #adjectives {
