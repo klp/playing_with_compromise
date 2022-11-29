@@ -26,6 +26,11 @@ li {
     text-align: justify;
     max-width: 800px;
     margin: 0 auto;
+    color:antiquewhite;
+}
+
+.adjective-color {
+    color:darkcyan;
 }
 
 #adjectives {
