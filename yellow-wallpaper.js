@@ -1,5 +1,5 @@
 $( "#forward" ).click(function() {
-    $.getJSON("story-hour.json", function(data){ // data variable is the JSON object
+    $.getJSON("yellow-wallpaper.json", function(data){ // data variable is the JSON object
       let storyText; // Define a new variable to hold all text
       storyText = "<p>"; // Open the starting tags
       // Now you can iterate (map) over the data variable’s .paragraphs property:
@@ -23,7 +23,7 @@ $( "#forward" ).click(function() {
   });
   
   $( "#reverse" ).click(function() {
-      $.getJSON("story-hour.json", function(data){ // data variable is the JSON object
+      $.getJSON("yellow-wallpaper.json", function(data){ // data variable is the JSON object
         let storyText; // Define a new variable to hold all text
         storyText = "<p>"; // Open the starting tags
         // Now you can iterate (map) over the data variable’s .paragraphs property:
