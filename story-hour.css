@@ -1,8 +1,8 @@
-body {
+/* body {
     background-color: #9FD0E1;
-   }
+   } */
 
-.container:before {
+.reverse-container:before {
  content: ' ';
  display: block;
  position: absolute;

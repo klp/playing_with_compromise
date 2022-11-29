@@ -1,4 +1,4 @@
-$( "#forward" ).click(function() {
+$( ".forward-button" ).click(function() {
     $.getJSON("yellow-wallpaper.json", function(data){ // data variable is the JSON object
       let storyText; // Define a new variable to hold all text
       storyText = "<p>"; // Open the starting tags
@@ -18,11 +18,11 @@ $( "#forward" ).click(function() {
       // Close the storyText tags
       storyText = storyText + "</p>";
       // Replace the content of #story
-      $("#story").html(storyText);
+      $(".story").html(storyText);
     }); // Close the getJSON method and callback function
   });
   
-  $( "#reverse" ).click(function() {
+  $( ".reverse-button" ).click(function() {
       $.getJSON("yellow-wallpaper.json", function(data){ // data variable is the JSON object
         let storyText; // Define a new variable to hold all text
         storyText = "<p>"; // Open the starting tags
@@ -42,6 +42,6 @@ $( "#forward" ).click(function() {
         // Close the storyText tags
         storyText = storyText + "</p>";
         // Replace the content of #story
-        $("#story").html(storyText);
+        $(".story").html(storyText);
       }); // Close the getJSON method and callback function
     });
