@@ -73,6 +73,10 @@ li {
     background-size: cover;
 }
 
+#body-bs {
+    background-color: #74A856;
+}
+
 #body-sh {
     background-color: #9FD0E1;
 }

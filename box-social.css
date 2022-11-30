@@ -1,7 +1,3 @@
-body {
-  background-color: #74A856;
-}
-
 .reverse-container:before {
  content: ' ';
  display: block;
