@@ -29,6 +29,8 @@ li {
     color:antiquewhite;
 }
 
+
+
 .forward-button {
     background-color: gray;
     color: white;
@@ -56,6 +58,11 @@ li {
 
 .reverse-container p, h1  {
     color:black;
+    position: relative;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+
 }
 
 .reverse-container:before {
