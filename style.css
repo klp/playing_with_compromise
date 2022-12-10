@@ -20,6 +20,11 @@
     z-index: 1;
   
 }
+
+.non-bulma-header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+}
   
 .reverse-button {
     background-color: gray;
