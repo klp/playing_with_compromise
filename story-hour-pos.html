@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Compromise Practice</title>
+</head>
+
+<body>
+  <div class="content">
+    <h1>Kate Chopin's <i>The Story of an Hour</i> by Parts of Speech</h1>
+    <p>A rough and ready proof of concept of how compromise's parts of speech tagger works.</p>
+    <h2>Adjectives</h2>
+        <div class="container">
+            <div id="adjectives"></div>
+        </div>
+    <h2>Adverbs</h2>
+        <div class="container">
+            <div id="adverbs"></div>
+        </div>
+    <h2>Nouns</h2>
+        <div class="container">
+            <div id="nouns"></div>
+        </div>
+    <h2>Verbs</h2>
+        <div class="container">
+            <div id="verbs"></div>
+        </div>
+    </div>
+  <script src="https://unpkg.com/compromise@latest/builds/compromise.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" 
+  integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" 
+  crossorigin="anonymous"></script>
+  <script src="story-hour-text.js"></script>
+  <script src="story-hour-app.js"></script>
+</body>
