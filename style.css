@@ -33,7 +33,7 @@ ul {
     z-index: 1;
 }
 
-.reverse-container p, h1  {
+.reverse-container {
     color:black;
     position: relative;
     font-size: large;

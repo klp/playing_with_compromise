@@ -3,19 +3,31 @@ const storyHourDoc = nlp(storyHourRepairText);
 const boxSocialDoc = nlp(boxSocialRepairText);
 
 const ypArray = ypDoc.match('#Adjective #Noun').out('array');
-
-console.log(ypArray);
+const storyHourArray = storyHourDoc.match('#Adjective #Noun').out('array');
+const boxSocialArray = boxSocialDoc.match('#Adjective #Noun').out('array');
 
 const ypOutputPairs = ypArray.map(function(pair) {
     return pair;
 });
 
-ypOutputPairs.forEach(function(pair) {
-    $("#yellow-wallpaper-list").append("<li>" + pair + "</li>");
-    // break into columns
-    if (ypOutputPairs.indexOf(pair) % 4 === 0) {
-        $("yellow-wallpaper-list").append("<br>");
-    }
+const storyHourOutputPairs = storyHourArray.map(function(pair) {
+    return pair;
 });
 
-console.log(ypArray.length);
+const boxSocialOutputPairs = boxSocialArray.map(function(pair) {
+    return pair;
+});
+
+ypOutputPairs.forEach(function(pair) {
+    $("#yellow-wallpaper-list").append("<li>" + pair + "</li>");
+});
+
+storyHourOutputPairs.forEach(function(pair) {
+    $("#story-hour-list").append("<li>" + pair + "</li>");
+});
+
+boxSocialOutputPairs.forEach(function(pair) {
+    $("#box-social-list").append("<li>" + pair + "</li>");
+});
+
+
