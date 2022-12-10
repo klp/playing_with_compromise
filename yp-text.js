@@ -835,9 +835,9 @@ pulled off most of the paper, so you can’t put me back!”
 Now why should that man have fainted? But he did, and right across my
 path by the wall, so that I had to creep over him every time!`
 
-const lowerCaseText = ypText.toLowerCase();
+const ypLowerCaseText = ypText.toLowerCase();
 
-const repairText = lowerCaseText
+const ypRepairText = ypLowerCaseText
     .replaceAll('"', '')
     .replaceAll('--', '')
     .replaceAll('?', '')
