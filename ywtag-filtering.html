@@ -3,22 +3,105 @@
   <head>
     <meta charset="utf-8">
     <title>Yellow Wallpaper Tag Filtering</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="yellow-wallpaper.css">
   </head>
   <body id="body-bs">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://klp.github.io/playing_with_compromise/">
+          <img src="5043999-200.png" width="36" height="36">
+        </a>
+      
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="true" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Parts of Speech
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="yp-pos.html">
+                The Yellow Wallpaper
+              </a>
+              <a class="navbar-item" href="story-hour-pos.html">
+                The Story of An Hour
+              </a>
+              <a class="navbar-item" href="box-social-pos.html">
+                The Box-Social
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="adjective-noun.html">
+                Adjective Noun Pairs
+            </a>
+            </div>
+          </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Paragraph Reversal
+              </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="yellow-wallpaper.html">
+                    The Yellow Wallpaper
+                  </a>
+                  <a class="navbar-item" href="story-hour.html">
+                    The Story of an Hour
+                  </a>
+                  <a class="navbar-item" href="box-social.html">
+                    The Box Social
+                  </a>
+                  <hr class="navbar-divider">
+                </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Thematic Tagging
+              </a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="ywtag-filtering.html">
+                  The Yellow Wallpaper
+                </a>
+                <a class="navbar-item" href="shtag-filtering.html">
+                  The Story of an Hour
+                </a>
+                <a class="navbar-item" href="bstag-filtering.html">
+                  The Box-Social
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="ywbssh.html">
+                The Yellow-Wallpapered Box Social Story of an Hour
+                </a>
+              </div>
+            </div>
+            <a class="navbar-item" href="about.html">
+              About
+            </a>
+          </div>
+        </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
     <div class="reverse-container">
-      <h1>Filtering The Yellow Wallpaper by Tag</h1>
+      <h1 class="non-bulma-header">Filtering The Yellow Wallpaper by Tag</h1>
       <div id="intro">
         <p>Each paragraph of "The Yellow Wallpaper" has been assigned tags pertaining to its content. Here, we've filtered the story on the tags "color," "light," "threshold," and "quote."</p>
       </div>
-      <h2>Color</h2>
+      <h2 class="non-bulma-header-2">Color</h2>
       <div id="color"></div>
-      <h2>Light</h2>
+      <h2 class="non-bulma-header-2">Light</h2>
       <div id="light"></div>
-      <h2>Threshold</h2>
+      <h2 class="non-bulma-header-2">Threshold</h2>
       <div id="threshold"></div>
-      <h2>Quote</h2>
+      <h2 class="non-bulma-header-2">Quote</h2>
       <div id="quote"></div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
