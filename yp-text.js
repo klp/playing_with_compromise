@@ -1,4 +1,4 @@
-const text = `It is very seldom that mere ordinary people like John and myself secure
+const ypText = `It is very seldom that mere ordinary people like John and myself secure
 ancestral halls for the summer.
 
 A colonial mansion, a hereditary estate, I would say a haunted house,
@@ -835,7 +835,7 @@ pulled off most of the paper, so you can’t put me back!”
 Now why should that man have fainted? But he did, and right across my
 path by the wall, so that I had to creep over him every time!`
 
-const lowerCaseText = text.toLowerCase();
+const lowerCaseText = ypText.toLowerCase();
 
 const repairText = lowerCaseText
     .replaceAll('"', '')
