@@ -64,5 +64,3 @@ const storyHourRepairText = storyHourLowerCaseText
     .replaceAll('“', '')
     .replaceAll('”', '')
     .replaceAll('(', '');
-
-console.log(storyHourRepairText);
