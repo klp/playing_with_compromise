@@ -1,3 +1,7 @@
+ul {
+    columns: 4;
+}
+
 .content {
     max-width: 800px;
     margin: 0 auto;
@@ -29,7 +33,7 @@
     z-index: 1;
 }
 
-.reverse-container p, h1  {
+.reverse-container {
     color:black;
     position: relative;
     font-size: large;
