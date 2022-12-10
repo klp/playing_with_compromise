@@ -1,4 +1,4 @@
-ul {
+.adj-noun-list ul {
     columns: 4;
 }
 
@@ -55,6 +55,10 @@ ul {
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
+}
+
+#bibliography li {
+    padding-bottom: 1rem;
 }
 
 #body-bs {
