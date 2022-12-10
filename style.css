@@ -1,35 +1,8 @@
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: black;
-}
-
-h1, h2, p {
-    color: aliceblue;
-}
-
-a {
-    color: cornflowerblue;
-}
-
-a:hover {
-    color:lightskyblue;
-}
-
-li {
-    padding: 1em, 1.5em, 1em, 1.5em;
-    margin: 1em, 1.5em, 1em, 1.5em;
-}
-
-.container {
-    padding: 1em, 1.5em, 1em, 1em;
-    background-color: #3b3b3a;
-    text-align: justify;
+.content {
     max-width: 800px;
     margin: 0 auto;
-    color:antiquewhite;
+    padding: 2em;
 }
-
-
 
 .forward-button {
     background-color: gray;
@@ -101,15 +74,15 @@ li {
 }
 
 #adjectives {
-    color: lightgray;
+    color: turquoise;
 }
 
 #adverbs {
-    color: violet;
+    color: cadetblue;
 }
 
 #nouns {
-    color: cornflowerblue;
+    color: deepskyblue;
 }
 
 #verbs {
