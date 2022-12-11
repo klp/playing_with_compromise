@@ -20,6 +20,17 @@
     z-index: 1;
   
 }
+
+.non-bulma-header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+}
+
+.non-bulma-header-2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding-bottom: 1rem;
+}
   
 .reverse-button {
     background-color: gray;
@@ -95,7 +106,7 @@
 }
 
 #adjectives {
-    color: turquoise;
+    color: #3c1361;
 }
 
 #adverbs {
@@ -107,7 +118,7 @@
 }
 
 #verbs {
-    color:crimson;
+    color:#880808;
 }
 
 #tagDescription {

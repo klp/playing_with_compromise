@@ -9,87 +9,113 @@
     <title>Compromise Practice</title>
 </head>
 <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="https://klp.github.io/playing_with_compromise/">
-            <img src="5043999-200.png" width="36" height="36">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://klp.github.io/playing_with_compromise/">
+        <img src="5043999-200.png" width="36" height="36">
+      </a>
+    
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="true" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Parts of Speech
           </a>
-        
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="true" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="yp-pos.html">
+              The Yellow Wallpaper
+            </a>
+            <a class="navbar-item" href="story-hour-pos.html">
+              The Story of An Hour
+            </a>
+            <a class="navbar-item" href="box-social-pos.html">
+              The Box-Social
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="adjective-noun.html">
+              Adjective Noun Pairs
           </a>
+          </div>
         </div>
-      
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">
-                Parts of Speech
-              </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Paragraph Reversal
+            </a>
               <div class="navbar-dropdown">
-                <a class="navbar-item" href="yp-pos.html">
-                  Yellow Wallpaper
+                <a class="navbar-item" href="yellow-wallpaper.html">
+                  The Yellow Wallpaper
                 </a>
-                <a class="navbar-item" href="count-pos.html">
-                  Part of Speech Counts
+                <a class="navbar-item" href="story-hour.html">
+                  The Story of an Hour
+                </a>
+                <a class="navbar-item" href="box-social.html">
+                  The Box Social
                 </a>
                 <hr class="navbar-divider">
               </div>
-            </div>
-              <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">
-                  Sentence Reversal
-                </a>
-                  <div class="navbar-dropdown">
-                    <a class="navbar-item" href="yellow-wallpaper.html">
-                      Yellow Wallpaper
-                    </a>
-                    <a class="navbar-item" href="story-hour.html">
-                      Story of an Hour
-                    </a>
-                    <a class="navbar-item" href="box-social.html">
-                      The Box Social
-                    </a>
-                    <hr class="navbar-divider">
-                  </div>
-              </div>
-              <a class="navbar-item">
-                About
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Thematic Tagging
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="ywtag-filtering.html">
+                The Yellow Wallpaper
+              </a>
+              <a class="navbar-item" href="shtag-filtering.html">
+                The Story of an Hour
+              </a>
+              <a class="navbar-item" href="bstag-filtering.html">
+                The Box-Social
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="ywbssh.html">
+              The Yellow-Wallpapered Box Social Story of an Hour
               </a>
             </div>
           </div>
-              </div>
-            </div>
+          <a class="navbar-item" href="about.html">
+            About
+          </a>
+        </div>
+      </div>
           </div>
         </div>
-      </nav>
-    <div class="content">
-    <h1>Charlotte Perkins Gilman's <i>The Yellow Wallpaper</i> by Parts of Speech</h1>
-    <p>A rough and ready proof of concept of how compromise's parts of speech tagger works.</p>
-    <h2>Adjectives</h2>
-        <div class="container">
-            <div id="adjectives"></div>
-        </div>
-    <h2>Adverbs</h2>
-        <div class="container">
-            <div id="adverbs"></div>
-        </div>
-    <h2>Nouns</h2>
-        <div class="container">
-            <div id="nouns"></div>
-        </div>
-    <h2>Verbs</h2>
-        <div class="container">
-            <div id="verbs"></div>
-        </div>
+      </div>
     </div>
-    <script src="https://unpkg.com/compromise@latest/builds/compromise.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" 
-    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" 
-    crossorigin="anonymous"></script>
-    <script src="yp-text.js"></script>
-    <script src="yp-app.js"></script>
+  </nav>
+  <div class="content">
+  <h1>Charlotte Perkins Gilman's <i>The Yellow Wallpaper</i> by Parts of Speech</h1>
+  <p>A rough and ready proof of concept of how compromise's parts of speech tagger works.</p>
+  <h2>Adjectives</h2>
+      <div class="container">
+          <div id="adjectives"></div>
+      </div>
+  <h2>Adverbs</h2>
+      <div class="container">
+          <div id="adverbs"></div>
+      </div>
+  <h2>Nouns</h2>
+      <div class="container">
+          <div id="nouns"></div>
+      </div>
+  <h2>Verbs</h2>
+      <div class="container">
+          <div id="verbs"></div>
+      </div>
+  </div>
+  <script src="https://unpkg.com/compromise@latest/builds/compromise.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" 
+  integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" 
+  crossorigin="anonymous"></script>
+  <script src="yp-text.js"></script>
+  <script src="yp-app.js"></script>
 </body>
 </html>
