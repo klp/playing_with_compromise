@@ -805,6 +805,232 @@ const yellowWallpaper = [
     tags: ["man", "health", "characteristic", "labor", "inside", "time"]},
 ];
 
+//make button clickable BUT THIS ISN'T WORKING, I THINK BC THE TEXT IS COMING TO THE HTML FROM HERE
+$("#toggle").click(function() {
+    $(".toggle").toggle();
+});
+
+//Fill out the "health" div with the paragraphs from the story tagged with "health"
+let storyHealth = ""; //define a variable to hold the story filtered by "health" tag
+storyHealth = "<p>"; //open the starting html tag
+
+function filterHealth(yellowWallpaper) {
+    for (let i = 0; i < yellowWallpaper.length; i++) {
+        let tags = yellowWallpaper[i].tags;
+        let healthText = "";
+        for (let t = 0; t < tags.length; t++) {
+            if (tags[t].includes("health")) {
+                healthText = yellowWallpaper[i].text + "<br>";
+                storyHealth = storyHealth + healthText + "<br>";
+            }
+        }
+    }
+}
+filterHealth(yellowWallpaper); // run the function
+storyHealth = storyHealth + "</p>"; //close the html tag
+$("#health").html(storyHealth); //add it to the "health" div
+
+//Fill out the "characteristic" div with the paragraphs from the story tagged with "characteristic"
+let storyCharacteristic = ""; //define a variable to hold the story filtered by "characteristic" tag
+storyCharacteristic = "<p>"; //open the starting html tag
+
+function filterCharacteristic(yellowWallpaper) {
+    for (let i = 0; i < yellowWallpaper.length; i++) {
+        let tags = yellowWallpaper[i].tags;
+        let characteristicText = "";
+        for (let t = 0; t < tags.length; t++) {
+            if (tags[t].includes("characteristic")) {
+                characteristicText = yellowWallpaper[i].text + "<br>";
+                storyCharacteristic = storyCharacteristic + characteristicText + "<br>";
+            }
+        }
+    }
+}
+filterCharacteristic(yellowWallpaper); // run the function
+storyCharacteristic = storyCharacteristic + "</p>"; //close the html tag
+$("#characteristic").html(storyCharacteristic); //add it to the "health" div
+
+//Fill out the "emotion" div with the paragraphs from the story tagged with "emotion"
+let storyEmotion = ""; //define a variable to hold the story filtered by "emotion" tag
+storyEmotion = "<p>"; //open the starting html tag
+
+function filterEmotion(yellowWallpaper) {
+    for (let i = 0; i < yellowWallpaper.length; i++) {
+        let tags = yellowWallpaper[i].tags;
+        let emotionText = "";
+        for (let t = 0; t < tags.length; t++) {
+            if (tags[t].includes("emotion")) {
+                emotionText = yellowWallpaper[i].text + "<br>";
+                storyEmotion = storyEmotion + emotionText + "<br>";
+            }
+        }
+    }
+}
+filterEmotion(yellowWallpaper); // run the function
+storyEmotion = storyEmotion + "</p>"; //close the html tag
+$("#emotion").html(storyEmotion); //add it to the "health" div
+
+//Fill out the "sound" div with the paragraphs from the story tagged with "sound"
+let storySound = ""; //define a variable to hold the story filtered by "sound" tag
+storySound = "<p>"; //open the starting html tag
+
+function filterSound(yellowWallpaper) {
+    for (let i = 0; i < yellowWallpaper.length; i++) {
+        let tags = yellowWallpaper[i].tags;
+        let soundText = "";
+        for (let t = 0; t < tags.length; t++) {
+            if (tags[t].includes("sound")) {
+                soundText = yellowWallpaper[i].text + "<br>";
+                storySound = storySound + soundText + "<br>";
+            }
+        }
+    }
+}
+filterSound(yellowWallpaper); // run the function
+storySound = storySound + "</p>"; //close the html tag
+$("#sound").html(storySound); //add it to the "sound" div
+
+//Fill out the "touch" div with the paragraphs from the story tagged with "touch"
+let storyTouch = ""; //define a variable to hold the story filtered by "touch" tag
+storyTouch = "<p>"; //open the starting html tag
+
+function filterTouch(yellowWallpaper) {
+    for (let i = 0; i < yellowWallpaper.length; i++) {
+        let tags = yellowWallpaper[i].tags;
+        let touchText = "";
+        for (let t = 0; t < tags.length; t++) {
+            if (tags[t].includes("touch")) {
+                touchText = yellowWallpaper[i].text + "<br>";
+                storyTouch = storyTouch + touchText + "<br>";
+            }
+        }
+    }
+}
+filterTouch(yellowWallpaper); // run the function
+storyTouch = storyTouch + "</p>"; //close the html tag
+$("#touch").html(storyTouch); //add it to the "touch" div
+
+//Fill out the "taste" div with the paragraphs from the story tagged with "taste"
+let storyTaste = ""; //define a variable to hold the story filtered by "taste" tag
+storyTaste = "<p>"; //open the starting html tag
+
+function filterTaste(yellowWallpaper) {
+    for (let i = 0; i < yellowWallpaper.length; i++) {
+        let tags = yellowWallpaper[i].tags;
+        let tasteText = "";
+        for (let t = 0; t < tags.length; t++) {
+            if (tags[t].includes("taste")) {
+                tasteText = yellowWallpaper[i].text + "<br>";
+                storyTaste = storyTaste + tasteText + "<br>";
+            }
+        }
+    }
+}
+filterTaste(yellowWallpaper); // run the function
+storyTaste = storyTaste + "</p>"; //close the html tag
+$("#taste").html(storyTaste); //add it to the "taste" div
+
+//Fill out the "smell" div with the paragraphs from the story tagged with "smell"
+let storySmell = ""; //define a variable to hold the story filtered by "smell" tag
+storySmell = "<p>"; //open the starting html tag
+
+function filterSmell(yellowWallpaper) {
+    for (let i = 0; i < yellowWallpaper.length; i++) {
+        let tags = yellowWallpaper[i].tags;
+        let smellText = "";
+        for (let t = 0; t < tags.length; t++) {
+            if (tags[t].includes("smell")) {
+                smellText = yellowWallpaper[i].text + "<br>";
+                storySmell = storySmell + smellText + "<br>";
+            }
+        }
+    }
+}
+filterSmell(yellowWallpaper); // run the function
+storySmell = storySmell + "</p>"; //close the html tag
+$("#smell").html(storySmell); //add it to the "smell" div
+
+//Fill out the "sight" div with the paragraphs from the story tagged with "sight"
+let storySight = ""; //define a variable to hold the story filtered by "sight" tag
+storySight = "<p>"; //open the starting html tag
+
+function filterSight(yellowWallpaper) {
+    for (let i = 0; i < yellowWallpaper.length; i++) {
+        let tags = yellowWallpaper[i].tags;
+        let sightText = "";
+        for (let t = 0; t < tags.length; t++) {
+            if (tags[t].includes("sight")) {
+                sightText = yellowWallpaper[i].text + "<br>";
+                storySight = storySight + sightText + "<br>";
+            }
+        }
+    }
+}
+filterSight(yellowWallpaper); // run the function
+storySight = storySight + "</p>"; //close the html tag
+$("#sight").html(storySight); //add it to the "sight" div
+
+//Fill out the "sense" div with the paragraphs from the story tagged with "sense"
+let storySense = ""; //define a variable to hold the story filtered by "sense" tag
+storySense = "<p>"; //open the starting html tag
+
+function filterSense(yellowWallpaper) {
+    for (let i = 0; i < yellowWallpaper.length; i++) {
+        let tags = yellowWallpaper[i].tags;
+        let senseText = "";
+        for (let t = 0; t < tags.length; t++) {
+            if (tags[t].includes("sense")) {
+                senseText = yellowWallpaper[i].text + "<br>";
+                storySense = storySense + senseText + "<br>";
+            }
+        }
+    }
+}
+filterSense(yellowWallpaper); // run the function
+storySense = storySense + "</p>"; //close the html tag
+$("#sense").html(storySense); //add it to the "sense" div
+
+
+//Fill out the "labor" div with the paragraphs from the story tagged with "labor"
+let storyLabor = ""; //define a variable to hold the story filtered by "labor" tag
+storyLabor = "<p>"; //open the starting html tag
+
+function filterLabor(yellowWallpaper) {
+    for (let i = 0; i < yellowWallpaper.length; i++) {
+        let tags = yellowWallpaper[i].tags;
+        let laborText = "";
+        for (let t = 0; t < tags.length; t++) {
+            if (tags[t].includes("labor")) {
+                laborText = yellowWallpaper[i].text + "<br>";
+                storyLabor = storyLabor + laborText + "<br>";
+            }
+        }
+    }
+}
+filterLabor(yellowWallpaper); // run the function
+storyLabor = storyLabor + "</p>"; //close the html tag
+$("#labor").html(storyLabor); //add it to the "labor" div
+
+//Fill out the "quote" div with the paragraphs from the story tagged with "quote"
+let storyQuote = ""; //define a variable to hold the story filtered by "quote" tag
+storyQuote = "<p>"; //open the starting html tag
+
+function filterQuote(yellowWallpaper) {
+    for (let i = 0; i < yellowWallpaper.length; i++) {
+        let tags = yellowWallpaper[i].tags;
+        let quoteText = "";
+        for (let t = 0; t < tags.length; t++) {
+            if (tags[t].includes("quote")) {
+                quoteText = yellowWallpaper[i].text + "<br>";
+                storyQuote = storyQuote + quoteText + "<br>";
+            }
+        }
+    }
+}
+filterQuote(yellowWallpaper); // run the function
+storyQuote = storyQuote + "</p>"; //close the html tag
+$("#quote").html(storyQuote); //add it to the "quote" div
+
 //Fill out the "color" div with the paragraphs from the story tagged with "color"
 let storyColor = ""; //define a variable to hold the story filtered by "color" tag
 storyColor = "<p>"; //open the starting html tag
@@ -825,25 +1051,65 @@ filterColor(yellowWallpaper); // run the function
 storyColor = storyColor + "</p>"; //close the html tag
 $("#color").html(storyColor); //add it to the "color" div
 
-//Fill out the "light" div with the paragraphs from the story tagged with "light"
-let storyLight = ""; //define a variable to hold the story filtered by "light" tag
-storyLight = "<p>"; //open the starting html tag
+//Fill out the "decor" div with the paragraphs from the story tagged with "decor"
+let storyDecor = ""; //define a variable to hold the story filtered by "decor" tag
+storyDecor = "<p>"; //open the starting html tag
 
-function filterLight(yellowWallpaper) {
+function filterDecor(yellowWallpaper) {
     for (let i = 0; i < yellowWallpaper.length; i++) {
         let tags = yellowWallpaper[i].tags;
-        let lightText = "";
+        let decorText = "";
         for (let t = 0; t < tags.length; t++) {
-            if (tags[t].includes("light")) {
-                lightText = yellowWallpaper[i].text + "<br>";
-                storyLight = storyLight + lightText + "<br>";
+            if (tags[t].includes("decor")) {
+                decorText = yellowWallpaper[i].text + "<br>";
+                storyDecor = storyDecor + decorText + "<br>";
             }
         }
     }
 }
-filterLight(yellowWallpaper); // run the function
-storyLight = storyLight + "</p>"; //close the html tag
-$("#light").html(storyLight); //add it to the "light" div
+filterDecor(yellowWallpaper); // run the function
+storyDecor = storyDecor + "</p>"; //close the html tag
+$("#decor").html(storyDecor); //add it to the "decor" div
+
+//Fill out the "window" div with the paragraphs from the story tagged with "window"
+let storyWindow = ""; //define a variable to hold the story filtered by "window" tag
+storyWindow = "<p>"; //open the starting html tag
+
+function filterWindow(yellowWallpaper) {
+    for (let i = 0; i < yellowWallpaper.length; i++) {
+        let tags = yellowWallpaper[i].tags;
+        let windowText = "";
+        for (let t = 0; t < tags.length; t++) {
+            if (tags[t].includes("window")) {
+                windowText = yellowWallpaper[i].text + "<br>";
+                storyWindow = storyWindow + windowText + "<br>";
+            }
+        }
+    }
+}
+filterWindow(yellowWallpaper); // run the function
+storyWindow = storyWindow + "</p>"; //close the html tag
+$("#window").html(storyWindow); //add it to the "window" div
+
+//Fill out the "door" div with the paragraphs from the story tagged with "door"
+let storyDoor = ""; //define a variable to hold the story filtered by "door" tag
+storyDoor = "<p>"; //open the starting html tag
+
+function filterDoor(yellowWallpaper) {
+    for (let i = 0; i < yellowWallpaper.length; i++) {
+        let tags = yellowWallpaper[i].tags;
+        let doorText = "";
+        for (let t = 0; t < tags.length; t++) {
+            if (tags[t].includes("door")) {
+                doorText = yellowWallpaper[i].text + "<br>";
+                storyDoor = storyDoor + doorText + "<br>";
+            }
+        }
+    }
+}
+filterDoor(yellowWallpaper); // run the function
+storyDoor = storyDoor + "</p>"; //close the html tag
+$("#door").html(storyDoor); //add it to the "door" div
 
 //Fill out the "threshold" div with the paragraphs from the story tagged with "threshold"
 let storyThreshold = ""; //define a variable to hold the story filtered by "threshold" tag
@@ -865,22 +1131,162 @@ filterThreshold(yellowWallpaper); // run the function
 storyThreshold = storyThreshold + "</p>"; //close the html tag
 $("#threshold").html(storyThreshold); //add it to the "threshold" div
 
-//Fill out the "quote" div with the paragraphs from the story tagged with "quote"
-let storyQuote = ""; //define a variable to hold the story filtered by "quote" tag
-storyQuote = "<p>"; //open the starting html tag
+//Fill out the "time" div with the paragraphs from the story tagged with "time"
+let storyTime = ""; //define a variable to hold the story filtered by "time" tag
+storyTime = "<p>"; //open the starting html tag
 
-function filterQuote(yellowWallpaper) {
+function filterTime(yellowWallpaper) {
     for (let i = 0; i < yellowWallpaper.length; i++) {
         let tags = yellowWallpaper[i].tags;
-        let quoteText = "";
+        let timeText = "";
         for (let t = 0; t < tags.length; t++) {
-            if (tags[t].includes("quote")) {
-                quoteText = yellowWallpaper[i].text + "<br>";
-                storyQuote = storyQuote + quoteText + "<br>";
+            if (tags[t].includes("time")) {
+                timeText = yellowWallpaper[i].text + "<br>";
+                storyTime = storyTime + timeText + "<br>";
             }
         }
     }
 }
-filterQuote(yellowWallpaper); // run the function
-storyQuote = storyQuote + "</p>"; //close the html tag
-$("#quote").html(storyQuote); //add it to the "quote" div
+filterTime(yellowWallpaper); // run the function
+storytime = storyTime + "</p>"; //close the html tag
+$("#time").html(storyTime); //add it to the "time" div
+
+//Fill out the "day" div with the paragraphs from the story tagged with "day"
+let storyDay = ""; //define a variable to hold the story filtered by "day" tag
+storyDay = "<p>"; //open the starting html tag
+
+function filterDay(yellowWallpaper) {
+    for (let i = 0; i < yellowWallpaper.length; i++) {
+        let tags = yellowWallpaper[i].tags;
+        let dayText = "";
+        for (let t = 0; t < tags.length; t++) {
+            if (tags[t].includes("day")) {
+                dayText = yellowWallpaper[i].text + "<br>";
+                storyDay = storyDay + dayText + "<br>";
+            }
+        }
+    }
+}
+filterDay(yellowWallpaper); // run the function
+storyDay = storyDay + "</p>"; //close the html tag
+$("#day").html(storyDay); //add it to the "day" div
+
+//Fill out the "night" div with the paragraphs from the story tagged with "night"
+let storyNight = ""; //define a variable to hold the story filtered by "night" tag
+storyNight = "<p>"; //open the starting html tag
+
+function filterNight(yellowWallpaper) {
+    for (let i = 0; i < yellowWallpaper.length; i++) {
+        let tags = yellowWallpaper[i].tags;
+        let nightText = "";
+        for (let t = 0; t < tags.length; t++) {
+            if (tags[t].includes("night")) {
+                nightText = yellowWallpaper[i].text + "<br>";
+                storyNight = storyNight + nightText + "<br>";
+            }
+        }
+    }
+}
+filterNight(yellowWallpaper); // run the function
+storyNight = storyNight + "</p>"; //close the html tag
+$("#night").html(storyNight); //add it to the "night" div
+
+//Fill out the "light" div with the paragraphs from the story tagged with "light"
+let storyLight = ""; //define a variable to hold the story filtered by "light" tag
+storyLight = "<p>"; //open the starting html tag
+
+function filterLight(yellowWallpaper) {
+    for (let i = 0; i < yellowWallpaper.length; i++) {
+        let tags = yellowWallpaper[i].tags;
+        let lightText = "";
+        for (let t = 0; t < tags.length; t++) {
+            if (tags[t].includes("light")) {
+                lightText = yellowWallpaper[i].text + "<br>";
+                storyLight = storyLight + lightText + "<br>";
+            }
+        }
+    }
+}
+filterLight(yellowWallpaper); // run the function
+storyLight = storyLight + "</p>"; //close the html tag
+$("#light").html(storyLight); //add it to the "light" div
+
+//Fill out the "inside" div with the paragraphs from the story tagged with "inside"
+let storyInside = ""; //define a variable to hold the story filtered by "inside" tag
+storyInside = "<p>"; //open the starting html tag
+
+function filterInside(yellowWallpaper) {
+    for (let i = 0; i < yellowWallpaper.length; i++) {
+        let tags = yellowWallpaper[i].tags;
+        let insideText = "";
+        for (let t = 0; t < tags.length; t++) {
+            if (tags[t].includes("inside")) {
+                insideText = yellowWallpaper[i].text + "<br>";
+                storyInside = storyInside + insideText + "<br>";
+            }
+        }
+    }
+}
+filterInside(yellowWallpaper); // run the function
+storyInside = storyInside + "</p>"; //close the html tag
+$("#inside").html(storyInside); //add it to the "inside" div
+
+//Fill out the "outside" div with the paragraphs from the story tagged with "outside"
+let storyOutside = ""; //define a variable to hold the story filtered by "outside" tag
+storyOutside = "<p>"; //open the starting html tag
+
+function filterOutside(yellowWallpaper) {
+    for (let i = 0; i < yellowWallpaper.length; i++) {
+        let tags = yellowWallpaper[i].tags;
+        let outsideText = "";
+        for (let t = 0; t < tags.length; t++) {
+            if (tags[t].includes("outside")) {
+                outsideText = yellowWallpaper[i].text + "<br>";
+                storyOutside = storyOutside + outsideText + "<br>";
+            }
+        }
+    }
+}
+filterOutside(yellowWallpaper); // run the function
+storyOutside = storyOutside + "</p>"; //close the html tag
+$("#outside").html(storyOutside); //add it to the "outside" div
+
+//Fill out the "baby" div with the paragraphs from the story tagged with "baby"
+let storyBaby = ""; //define a variable to hold the story filtered by "baby" tag
+storyBaby = "<p>"; //open the starting html tag
+
+function filterBaby(yellowWallpaper) {
+    for (let i = 0; i < yellowWallpaper.length; i++) {
+        let tags = yellowWallpaper[i].tags;
+        let babyText = "";
+        for (let t = 0; t < tags.length; t++) {
+            if (tags[t].includes("baby")) {
+                babyText = yellowWallpaper[i].text + "<br>";
+                storyBaby = storyBaby + babyText + "<br>";
+            }
+        }
+    }
+}
+filterBaby(yellowWallpaper); // run the function
+storyBaby = storyBaby + "</p>"; //close the html tag
+$("#baby").html(storyBaby); //add it to the "baby" div
+
+//Fill out the "man" div with the paragraphs from the story tagged with "man"
+let storyMan = ""; //define a variable to hold the story filtered by "man" tag
+storyMan = "<p>"; //open the starting html tag
+
+function filterMan(yellowWallpaper) {
+    for (let i = 0; i < yellowWallpaper.length; i++) {
+        let tags = yellowWallpaper[i].tags;
+        let manText = "";
+        for (let t = 0; t < tags.length; t++) {
+            if (tags[t].includes("man")) {
+                manText = yellowWallpaper[i].text + "<br>";
+                storyMan = storyMan + manText + "<br>";
+            }
+        }
+    }
+}
+filterMan(yellowWallpaper); // run the function
+storyMan = storyMan + "</p>"; //close the html tag
+$("#man").html(storyMan); //add it to the "man" div
