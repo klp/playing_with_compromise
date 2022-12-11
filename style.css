@@ -33,6 +33,19 @@
     z-index: 1;
 }
 
+#toggle {
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    z-index: 1;
+  
+}
+
 .reverse-container {
     color:black;
     position: relative;
@@ -95,5 +108,10 @@
 
 #verbs {
     color:crimson;
+}
+
+#tagDescription {
+    font-size: smaller;
+    color: darkred
 }
 

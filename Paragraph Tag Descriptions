@@ -44,6 +44,6 @@ inside: text that describes actions happening indoors, either at home or within 
 
 outside: text that describes actions happing outdoors, not within a home or other type of building, or in which location is clear from context
 
-baby: text the describes a baby
+baby: text that describes a baby or the care of a baby
 
 man: text describing or voicing any male character

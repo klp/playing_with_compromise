@@ -165,64 +165,64 @@ storySound = storySound + "</p>"; //close the html tag
 $("#sound").html(storySound); //add it to the "sound" div
 
 //Fill out the "touch" div with the paragraphs from the story tagged with "touch"
-let storyTouch = ""; //define a variable to hold the story filtered by "touch" tag
-storyTouch = "<p>"; //open the starting html tag
+//let storyTouch = ""; //define a variable to hold the story filtered by "touch" tag
+//storyTouch = "<p>"; //open the starting html tag
 
-function filterTouch(boxSocial) {
-    for (let i = 0; i < boxSocial.length; i++) {
-        let tags = boxSocial[i].tags;
-        let touchText = "";
-        for (let t = 0; t < tags.length; t++) {
-            if (tags[t].includes("touch")) {
-                touchText = boxSocial[i].text + "<br>";
-                storyTouch = storyTouch + touchText + "<br>";
-            }
-        }
-    }
-}
-filterTouch(boxSocial); // run the function
-storyTouch = storyTouch + "</p>"; //close the html tag
-$("#touch").html(storyTouch); //add it to the "touch" div
+//function filterTouch(boxSocial) {
+ //   for (let i = 0; i < boxSocial.length; i++) {
+   //     let tags = boxSocial[i].tags;
+     //   let touchText = "";
+       // for (let t = 0; t < tags.length; t++) {
+         //   if (tags[t].includes("touch")) {
+           //     touchText = boxSocial[i].text + "<br>";
+             //   storyTouch = storyTouch + touchText + "<br>";
+          //  }
+       // }
+    //}
+//}
+//filterTouch(boxSocial); // run the function
+//storyTouch = storyTouch + "</p>"; //close the html tag
+//$("#touch").html(storyTouch); //add it to the "touch" div
 
 //Fill out the "taste" div with the paragraphs from the story tagged with "taste"
-let storyTaste = ""; //define a variable to hold the story filtered by "taste" tag
-storyTaste = "<p>"; //open the starting html tag
+//let storyTaste = ""; //define a variable to hold the story filtered by "taste" tag
+//storyTaste = "<p>"; //open the starting html tag
 
-function filterTaste(boxSocial) {
-    for (let i = 0; i < boxSocial.length; i++) {
-        let tags = boxSocial[i].tags;
-        let tasteText = "";
-        for (let t = 0; t < tags.length; t++) {
-            if (tags[t].includes("taste")) {
-                tasteText = boxSocial[i].text + "<br>";
-                storyTaste = storyTaste + tasteText + "<br>";
-            }
-        }
-    }
-}
-filterTaste(boxSocial); // run the function
-storyTaste = storyTaste + "</p>"; //close the html tag
-$("#taste").html(storyTaste); //add it to the "taste" div
+//function filterTaste(boxSocial) {
+  //  for (let i = 0; i < boxSocial.length; i++) {
+    //    let tags = boxSocial[i].tags;
+      //  let tasteText = "";
+        //for (let t = 0; t < tags.length; t++) {
+          //  if (tags[t].includes("taste")) {
+            //    tasteText = boxSocial[i].text + "<br>";
+              //  storyTaste = storyTaste + tasteText + "<br>";
+           // }
+       // }
+   // }
+//}
+//filterTaste(boxSocial); // run the function
+//storyTaste = storyTaste + "</p>"; //close the html tag
+//$("#taste").html(storyTaste); //add it to the "taste" div
 
 //Fill out the "smell" div with the paragraphs from the story tagged with "smell"
-let storySmell = ""; //define a variable to hold the story filtered by "smell" tag
-storySmell = "<p>"; //open the starting html tag
+//let storySmell = ""; //define a variable to hold the story filtered by "smell" tag
+//storySmell = "<p>"; //open the starting html tag
 
-function filterSmell(boxSocial) {
-    for (let i = 0; i < boxSocial.length; i++) {
-        let tags = boxSocial[i].tags;
-        let smellText = "";
-        for (let t = 0; t < tags.length; t++) {
-            if (tags[t].includes("smell")) {
-                smellText = boxSocial[i].text + "<br>";
-                storySmell = storySmell + smellText + "<br>";
-            }
-        }
-    }
-}
-filterSmell(boxSocial); // run the function
-storySmell = storySmell + "</p>"; //close the html tag
-$("#smell").html(storySmell); //add it to the "smell" div
+//function filterSmell(boxSocial) {
+  //  for (let i = 0; i < boxSocial.length; i++) {
+    //    let tags = boxSocial[i].tags;
+      //  let smellText = "";
+       // for (let t = 0; t < tags.length; t++) {
+         //   if (tags[t].includes("smell")) {
+           //     smellText = boxSocial[i].text + "<br>";
+             //   storySmell = storySmell + smellText + "<br>";
+           // }
+       // }
+    //}
+//}
+//filterSmell(boxSocial); // run the function
+//storySmell = storySmell + "</p>"; //close the html tag
+//$("#smell").html(storySmell); //add it to the "smell" div
 
 //Fill out the "sight" div with the paragraphs from the story tagged with "sight"
 let storySight = ""; //define a variable to hold the story filtered by "sight" tag
@@ -426,24 +426,24 @@ storytime = storyTime + "</p>"; //close the html tag
 $("#time").html(storyTime); //add it to the "time" div
 
 //Fill out the "day" div with the paragraphs from the story tagged with "day"
-let storyDay = ""; //define a variable to hold the story filtered by "day" tag
-storyDay = "<p>"; //open the starting html tag
+//let storyDay = ""; //define a variable to hold the story filtered by "day" tag
+//storyDay = "<p>"; //open the starting html tag
 
-function filterDay(boxSocial) {
-    for (let i = 0; i < boxSocial.length; i++) {
-        let tags = boxSocial[i].tags;
-        let dayText = "";
-        for (let t = 0; t < tags.length; t++) {
-            if (tags[t].includes("day")) {
-                dayText = boxSocial[i].text + "<br>";
-                storyDay = storyDay + dayText + "<br>";
-            }
-        }
-    }
-}
-filterDay(boxSocial); // run the function
-storyDay = storyDay + "</p>"; //close the html tag
-$("#day").html(storyDay); //add it to the "day" div
+//function filterDay(boxSocial) {
+  //  for (let i = 0; i < boxSocial.length; i++) {
+    //    let tags = boxSocial[i].tags;
+      //  let dayText = "";
+        //for (let t = 0; t < tags.length; t++) {
+          //  if (tags[t].includes("day")) {
+            //    dayText = boxSocial[i].text + "<br>";
+              //  storyDay = storyDay + dayText + "<br>";
+           // }
+       // }
+   // }
+//}
+//filterDay(boxSocial); // run the function
+//storyDay = storyDay + "</p>"; //close the html tag
+//$("#day").html(storyDay); //add it to the "day" div
 
 //Fill out the "night" div with the paragraphs from the story tagged with "night"
 let storyNight = ""; //define a variable to hold the story filtered by "night" tag

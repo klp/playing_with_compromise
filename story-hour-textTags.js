@@ -260,24 +260,24 @@ $("#sense").html(storySense); //add it to the "sense" div
 
 
 //Fill out the "labor" div with the paragraphs from the story tagged with "labor"
-let storyLabor = ""; //define a variable to hold the story filtered by "labor" tag
-storyLabor = "<p>"; //open the starting html tag
+//let storyLabor = ""; //define a variable to hold the story filtered by "labor" tag
+//storyLabor = "<p>"; //open the starting html tag
 
-function filterLabor(storyHour) {
-    for (let i = 0; i < storyHour.length; i++) {
-        let tags = storyHour[i].tags;
-        let laborText = "";
-        for (let t = 0; t < tags.length; t++) {
-            if (tags[t].includes("labor")) {
-                laborText = storyHour[i].text + "<br>";
-                storyLabor = storyLabor + laborText + "<br>";
-            }
-        }
-    }
-}
-filterLabor(storyHour); // run the function
-storyLabor = storyLabor + "</p>"; //close the html tag
-$("#labor").html(storyLabor); //add it to the "labor" div
+//function filterLabor(storyHour) {
+    //for (let i = 0; i < storyHour.length; i++) {
+       // let tags = storyHour[i].tags;
+       // let laborText = "";
+       // for (let t = 0; t < tags.length; t++) {
+        //    if (tags[t].includes("labor")) {
+        //        laborText = storyHour[i].text + "<br>";
+        //        storyLabor = storyLabor + laborText + "<br>";
+       //     }
+       // }
+   // }
+//}
+//filterLabor(storyHour); // run the function
+//storyLabor = storyLabor + "</p>"; //close the html tag
+//$("#labor").html(storyLabor); //add it to the "labor" div
 
 //Fill out the "quote" div with the paragraphs from the story tagged with "quote"
 let storyQuote = ""; //define a variable to hold the story filtered by "quote" tag
@@ -440,44 +440,44 @@ storyDay = storyDay + "</p>"; //close the html tag
 $("#day").html(storyDay); //add it to the "day" div
 
 //Fill out the "night" div with the paragraphs from the story tagged with "night"
-let storyNight = ""; //define a variable to hold the story filtered by "night" tag
-storyNight = "<p>"; //open the starting html tag
+//let storyNight = ""; //define a variable to hold the story filtered by "night" tag
+//storyNight = "<p>"; //open the starting html tag
 
-function filterNight(storyHour) {
-    for (let i = 0; i < storyHour.length; i++) {
-        let tags = storyHour[i].tags;
-        let nightText = "";
-        for (let t = 0; t < tags.length; t++) {
-            if (tags[t].includes("night")) {
-                nightText = storyHour[i].text + "<br>";
-                storyNight = storyNight + nightText + "<br>";
-            }
-        }
-    }
-}
-filterNight(storyHour); // run the function
-storyNight = storyNight + "</p>"; //close the html tag
-$("#night").html(storyNight); //add it to the "night" div
+//function filterNight(storyHour) {
+    //for (let i = 0; i < storyHour.length; i++) {
+      //  let tags = storyHour[i].tags;
+        //let nightText = "";
+       // for (let t = 0; t < tags.length; t++) {
+        //    if (tags[t].includes("night")) {
+          //      nightText = storyHour[i].text + "<br>";
+            //    storyNight = storyNight + nightText + "<br>";
+            //}
+       // }
+    //}
+//}
+//filterNight(storyHour); // run the function
+//storyNight = storyNight + "</p>"; //close the html tag
+//$("#night").html(storyNight); //add it to the "night" div
 
 //Fill out the "light" div with the paragraphs from the story tagged with "light"
-let storyLight = ""; //define a variable to hold the story filtered by "light" tag
-storyLight = "<p>"; //open the starting html tag
+//let storyLight = ""; //define a variable to hold the story filtered by "light" tag
+//storyLight = "<p>"; //open the starting html tag
 
-function filterLight(storyHour) {
-    for (let i = 0; i < storyHour.length; i++) {
-        let tags = storyHour[i].tags;
-        let lightText = "";
-        for (let t = 0; t < tags.length; t++) {
-            if (tags[t].includes("light")) {
-                lightText = storyHour[i].text + "<br>";
-                storyLight = storyLight + lightText + "<br>";
-            }
-        }
-    }
-}
-filterLight(storyHour); // run the function
-storyLight = storyLight + "</p>"; //close the html tag
-$("#light").html(storyLight); //add it to the "light" div
+//function filterLight(storyHour) {
+  //  for (let i = 0; i < storyHour.length; i++) {
+    //    let tags = storyHour[i].tags;
+      //  let lightText = "";
+        //for (let t = 0; t < tags.length; t++) {
+          //  if (tags[t].includes("light")) {
+            //    lightText = storyHour[i].text + "<br>";
+              //  storyLight = storyLight + lightText + "<br>";
+        //    }
+       // }
+   // }
+//}
+//filterLight(storyHour); // run the function
+//storyLight = storyLight + "</p>"; //close the html tag
+//$("#light").html(storyLight); //add it to the "light" div
 
 //Fill out the "inside" div with the paragraphs from the story tagged with "inside"
 let storyInside = ""; //define a variable to hold the story filtered by "inside" tag
@@ -520,24 +520,24 @@ storyOutside = storyOutside + "</p>"; //close the html tag
 $("#outside").html(storyOutside); //add it to the "outside" div
 
 //Fill out the "baby" div with the paragraphs from the story tagged with "baby"
-let storyBaby = ""; //define a variable to hold the story filtered by "baby" tag
-storyBaby = "<p>"; //open the starting html tag
+//let storyBaby = ""; //define a variable to hold the story filtered by "baby" tag
+//storyBaby = "<p>"; //open the starting html tag
 
-function filterBaby(storyHour) {
-    for (let i = 0; i < storyHour.length; i++) {
-        let tags = storyHour[i].tags;
-        let babyText = "";
-        for (let t = 0; t < tags.length; t++) {
-            if (tags[t].includes("baby")) {
-                babyText = storyHour[i].text + "<br>";
-                storyBaby = storyBaby + babyText + "<br>";
-            }
-        }
-    }
-}
-filterBaby(storyHour); // run the function
-storyBaby = storyBaby + "</p>"; //close the html tag
-$("#baby").html(storyBaby); //add it to the "baby" div
+//function filterBaby(storyHour) {
+  //  for (let i = 0; i < storyHour.length; i++) {
+    //    let tags = storyHour[i].tags;
+      //  let babyText = "";
+       // for (let t = 0; t < tags.length; t++) {
+         //   if (tags[t].includes("baby")) {
+           //     babyText = storyHour[i].text + "<br>";
+             //   storyBaby = storyBaby + babyText + "<br>";
+            //}
+       // }
+    //}
+//}
+//filterBaby(storyHour); // run the function
+//storyBaby = storyBaby + "</p>"; //close the html tag
+//$("#baby").html(storyBaby); //add it to the "baby" div
 
 //Fill out the "man" div with the paragraphs from the story tagged with "man"
 let storyMan = ""; //define a variable to hold the story filtered by "man" tag
