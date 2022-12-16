@@ -117,7 +117,7 @@
       <p>
         Independent of my original vision, a joint project for a Digital 
         Humanities tends to butter my toast, adding a pair of eyes and a 
-        different brain to an academic project helps cover blindspots under 
+        different brain to an academic project helps uncover blindspots under 
         tight deadlines. I'm also a proponent of complementary skill sets in 
         teams. When Bri proposed working together a text-base deformance project,
          I jumped at the chance.  
@@ -136,45 +136,101 @@
         Million Books</em> as a launchpad, the class focused on small project 
         work, often deforming and experimenting with ways to defamilize 
         digital media. Examples of my own work from that class include a 
-        <a href="https://vimeo.com/532668376">video PechaKucha</a>
+        <a href="https://vimeo.com/532668376">video PechaKucha</a> and a series 
+        of movie screenshots animated by the astrology software 
+        <a href="https://markus-enzweiler.de/software/starstax/">StarStax</a>. 
+        Other, more <em>professional</em> efforts from Ferguson 
+        <a href="https://filmvis.tumblr.com/">here</a> and one of his fellow 
+        travelers <a href="https://vimeo.com/showcase/6603776">here</a>.
+      </p>
+      <p>
+        I offer the background above for useful contrast to our project output.
+        On the one hand, our transformations of the targeted texts falls 
+        squarely within the types of deformance examined in Samuels and McGann,
+        with an emphasis on methods one can used without computer/digital 
+        assistance: reading backwards (our paragraph reversals), focusing on 
+        parts of speech, etc. However, when comparing these manipulations with
+        the examples from <em>Alternative Digital Cultures</em>, I'm struck by
+        those methods use the medium <em>qua</em> material, deforming in ways 
+        made accessible with digital technologies and tools.
       </p>
     <h6>Contributions</h6>
+      <p>
+        Contributions can be gleaned from the 
+        <a href="https://github.com/klp/playing_with_compromise/commits/main">
+        commit history</a> of our repository.
+      </p>
+      <p>
+        Most of my code contribution was built with Compromise. For this project 
+        I also managed some merge complications in  our git repo,  tried to pull
+        the site together into a cohesive whole with a navigation, paratext, 
+        style and so on. I am paricular proud of the Adjective&#8212;Noun Pairs,
+        which could provide a nice band/project name generation machine. In fact
+        the project name was created from three adjective&#8212;noun pairs.
+      </p>
+      <p>
+        One covert goal of how I wanted to contribute to this project was to 
+        create scaffolding for Bri to focus on learning the technical skills 
+        she was interested in. Outside of one hiccup related to learning how 
+        git works, I think this goal was met.
+      </p>
     <h6>Challenges</h6>
+      <p>
+        I am always cutting scope for these class projects. Estimating effort 
+        for this type of techincal work is notoriously difficult.
+      </p>
+      <p>
+        One challenge I faced was the relative maturity of the Compromise 
+        library. The development effort is lead by one contributor, and while 
+        updates are made regularly at present, the creator himself admits to 
+        shortcomings:
+      </p>
+      <blockquote>
+        compromise tries its best to turn text into data.
+          it makes limited and sensible decisions.
+                  it's not as smart as you'd think. 
+      </blockquote>
+      <p>
+        This limited nature resulted in a fair number corrections and refinement
+        on my end to make some of the parts of speech parsing and tokenization
+        work.
+      </p>
+      <p>
+        One aspect of collaboration in Digital Humanities projects that I don't 
+        always account for is training about code version control systems, in 
+        our case, git and GitHub. The CUNY Graduate Center and the 
+        <a href="https://gcdri.commons.gc.cuny.edu/">GCDRI</a> do provide 
+        adequate training for use of these versioning tools in a single 
+        contributor scenario. The second collaboration is necessary, the value 
+        and complication of git workflows becomes apparent. It's not intuitive
+        or straightforward to learn how to branch, resolve merge conflicts, or
+        keep a feature branch up to date with production. I commend Bri for 
+        sticking with it, and I was happy to provide assistance shuffling code 
+        between repositories and solving merge conflicts while she came up to 
+        speed on how to work collaboratively in a GitHub repository. Again, 
+        these tools are not always intuitive until you've worked with them for
+        a while.
+      </p>
     <h6>Potential Evolutions </h6>
       <p>
-        I started by creating JSON files that treated each pagraph as its own string, with an associated array 
-        of thematic tags. For the paragraph reversals, I wrote a JavaScript function that would iterate over each 
-        paragraph and add them to the html. I copied that code and altered it to make my function iterate over 
-        the paragraphs in reverse order, and then I assigned each function to a click event on the respective buttons.
+        What would a clearer, more expository and exploratory alternative to 
+        Voyant Tools look like?
       </p>
-      <p>
-        I wrote the paragraph reversal code before I created the tagging schema, and I actually found it to be 
-        very useful to check my tags on each paragraph by reading them in reverse order, so I could see how well 
-        I was thinking about each paragraph on its own, rather than only thinking about what I was bringing to each 
-        paragraph based on what was in the previous one. I kept tweaking the definitions of each of my tags and adding 
-        new tags each time I reread each story, which meant I had to keep checking my tag usage in the other two stories. 
-        The tags are of course much more subjective than objective, but I'm confident they present a useful and interesting 
-        way to filter each story. And I included the tag descriptions in the final presentation to be open with users in how 
-        I was using them.
-      </p>
-      <p>
-        Ultimately I hope to use them to write code that will replicate my splicing exercise, but it took me much 
-        longer to write the code just to filter each paragraph by tag than I thought it would. I learned many valuable lessons 
-        as I was trying to write this code, chief among which is that you can't assume the computer is reading your data 
-        the way you are reading your data and the console.log() is a great debugging tool. My original JSON format was 
-        overly complicated, so for these pages I moved my info over to a regular JavaScript file. I also learned the value of 
-        nesting code. I needed a function with a for loop within a for loop, so that it would iterate by paragraph and then 
-        iterate through my array of tags before pulling into the html the paragraphs associated with each tag. I had hoped to 
-        create some functionality that would allow you to view just one tag at a time, but I have yet to crack that code, and 
-        I've grown fond of the current display, which kind of overwhelms you by repeating the overlapping fragments of the story 
-        over and over and over again. I think this in itself is a deformance, somewhat akin to the feeling of reading a word so 
-        many times it starts to look strange and unfamiliar.
-      </p>
-      <p>
-        The CSS styling of the pages was a joint effort between Kai and me. But I have to give him all the credit for pulling 
-        all our pages together and creating the nav and making this a real website. Also a huge thank you to him for being 
-        patient with me as he helped me learn to use Git and GitHub, especially when I managed to lose almost all of my files 
-        on one commit attempt and had to rewrite them from memory. Thank you also to Jeff Allred for encouraging this project 
-        in all of its versions.
+      <p>Using this project as a basis to understand that question, I will point
+        out three factors that would be critical for future evolutions:
+        <ul>
+          <li>Provide tools for site visitors to create their own deformances
+            <ul>
+              <li>
+                Move NLP processes to a server side application to allow for 
+                visitors uploaded their own texts, and provide better 
+                tokenization, parsing and calculation performance
+              </li>
+              <li>
+                Create an interface for 
+              </li>
+            </ul>
+          </li>
+        </ul>
       </p>
   </div>
