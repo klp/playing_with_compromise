@@ -102,3 +102,79 @@
       </div>
     </div>
   </nav>
+  <div class="content">
+    <h1>Kai's Reflections</h1>
+    <h6>Inception</h6>
+      <p>
+        The origins of this project for me started at the beginning of the 
+        semester. I had a brainworm nagging at me: what would a clearer, more 
+        expository and exploratory alternative to Voyant Tools look like? The 
+        ridiculous follow-up would be: could I build a reasonable facsimile of 
+        this alternative in a semester? The answer to the second question given 
+        my employment situation, class schedule and personal life is a firm no, 
+        but my original brainworm will inform some of my reflections.
+      </p>
+      <p>
+        Independent of my original vision, a joint project for a Digital 
+        Humanities tends to butter my toast, adding a pair of eyes and a 
+        different brain to an academic project helps cover blindspots under 
+        tight deadlines. I'm also a proponent of complementary skill sets in 
+        teams. When Bri proposed working together a text-base deformance project,
+         I jumped at the chance.  
+      </p>
+    <h6>Theory and Practice </h6>
+      <p>
+        As mentioned in our 
+        <a href="https://klp.github.io/playing_with_compromise/">
+        project introduction</a>, the practice of deformance provides our 
+        theoretical bulwark against trivializing our approach. My 
+        introduction to these types of practices came from a class taught two 
+        years by <a href="https://qcenglish.commons.gc.cuny.edu/people/kevin-l-ferguson/">
+        Kevin L. Ferguson</a> called <em>Alternative Digital Cultures</em>. 
+        Using Samuels and McGann's seminal work on deformance and Stephen 
+        Ramsey's <em>The Hermeneutics of Screwing Around; or What You Do with a 
+        Million Books</em> as a launchpad, the class focused on small project 
+        work, often deforming and experimenting with ways to defamilize 
+        digital media. Examples of my own work from that class include a 
+        <a href="https://vimeo.com/532668376">video PechaKucha</a>
+      </p>
+    <h6>Contributions</h6>
+    <h6>Challenges</h6>
+    <h6>Potential Evolutions </h6>
+      <p>
+        I started by creating JSON files that treated each pagraph as its own string, with an associated array 
+        of thematic tags. For the paragraph reversals, I wrote a JavaScript function that would iterate over each 
+        paragraph and add them to the html. I copied that code and altered it to make my function iterate over 
+        the paragraphs in reverse order, and then I assigned each function to a click event on the respective buttons.
+      </p>
+      <p>
+        I wrote the paragraph reversal code before I created the tagging schema, and I actually found it to be 
+        very useful to check my tags on each paragraph by reading them in reverse order, so I could see how well 
+        I was thinking about each paragraph on its own, rather than only thinking about what I was bringing to each 
+        paragraph based on what was in the previous one. I kept tweaking the definitions of each of my tags and adding 
+        new tags each time I reread each story, which meant I had to keep checking my tag usage in the other two stories. 
+        The tags are of course much more subjective than objective, but I'm confident they present a useful and interesting 
+        way to filter each story. And I included the tag descriptions in the final presentation to be open with users in how 
+        I was using them.
+      </p>
+      <p>
+        Ultimately I hope to use them to write code that will replicate my splicing exercise, but it took me much 
+        longer to write the code just to filter each paragraph by tag than I thought it would. I learned many valuable lessons 
+        as I was trying to write this code, chief among which is that you can't assume the computer is reading your data 
+        the way you are reading your data and the console.log() is a great debugging tool. My original JSON format was 
+        overly complicated, so for these pages I moved my info over to a regular JavaScript file. I also learned the value of 
+        nesting code. I needed a function with a for loop within a for loop, so that it would iterate by paragraph and then 
+        iterate through my array of tags before pulling into the html the paragraphs associated with each tag. I had hoped to 
+        create some functionality that would allow you to view just one tag at a time, but I have yet to crack that code, and 
+        I've grown fond of the current display, which kind of overwhelms you by repeating the overlapping fragments of the story 
+        over and over and over again. I think this in itself is a deformance, somewhat akin to the feeling of reading a word so 
+        many times it starts to look strange and unfamiliar.
+      </p>
+      <p>
+        The CSS styling of the pages was a joint effort between Kai and me. But I have to give him all the credit for pulling 
+        all our pages together and creating the nav and making this a real website. Also a huge thank you to him for being 
+        patient with me as he helped me learn to use Git and GitHub, especially when I managed to lose almost all of my files 
+        on one commit attempt and had to rewrite them from memory. Thank you also to Jeff Allred for encouraging this project 
+        in all of its versions.
+      </p>
+  </div>
