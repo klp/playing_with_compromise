@@ -105,16 +105,17 @@
   <div class="content">
     <h1>Bri's Reflections</h1>
         <p>
-          I was so excited when Kai wanted me to work on this project with him, but I was very concerned 
-          I wouldn't be bringing enough to the so-called table with my skillset. I am happy to report 
+          I was so excited when Kai wanted to work with me on this project, but I was very concerned 
+          I wouldn't be bringing enough to the so-called table with my skill set. I am happy to report 
           that I proved myself wrong.
         </p>
         <p>
-          I was responsible for splicing together these three stories for the group audiobook project, 
+          It was my idea to splice together these three stories for the group audiobook project, 
           "<a href='ywbssh.html'>The Yellow-Wallpapered Box-Social Story of an Hour</a>," that 
           inspired this one. So I was very intrigued with thinking about these stories as a compliation of 
-          paragraphs. I created the pages (and code behind them) for both the paragraph reversal and thematic 
-          tagging sections.
+          paragraphs and seeing whether I could write code to replicate and riff off of the version I manually 
+          sliced together for the audiobook. As such, I created the pages (and code behind them) for both 
+          the paragraph reversal and thematic tagging sections.
         </p>
         <p>
           I started by creating JSON files that treated each pagraph as its own string, with an associated array 
@@ -133,13 +134,13 @@
           I was using them.
         </p>
         <p>
-          Ultimately I hope to use them to write code that will replicate my splicing exercise, but it took me much 
+          Ultimately I hope to use these tags to write code that will replicate my splicing exercise, but it took me much 
           longer to write the code just to filter each paragraph by tag than I thought it would. I learned many valuable lessons 
           as I was trying to write this code, chief among which is that you can't assume the computer is reading your data 
           the way you are reading your data and the console.log() is a great debugging tool. My original JSON format was 
-          overly complicated, so for these pages I moved my info over to a regular JavaScript file. I also learned the value of 
+          overly complicated, so for these pages I moved my data into to a regular JavaScript file. I also learned the value of 
           nesting code. I needed a function with a for loop within a for loop, so that it would iterate by paragraph and then 
-          iterate through my array of tags before pulling into the html the paragraphs associated with each tag. I had hoped to 
+          iterate through each array of tags before pulling into the html the paragraphs associated with each tag. I had hoped to 
           create some functionality that would allow you to view just one tag at a time, but I have yet to crack that code, and 
           I've grown fond of the current display, which kind of overwhelms you by repeating the overlapping fragments of the story 
           over and over and over again. I think this in itself is a deformance, somewhat akin to the feeling of reading a word so 
@@ -149,7 +150,7 @@
           The CSS styling of the pages was a joint effort between Kai and me. But I have to give him all the credit for pulling 
           all our pages together and creating the nav and making this a real website. Also a huge thank you to him for being 
           patient with me as he helped me learn to use Git and GitHub, especially when I managed to lose almost all of my files 
-          on one commit attempt and had to rewrite them from memory. Thank you also to Jeff Allred for encouraging this project 
-          in all of its versions.
+          on one commit attempt and had to rewrite them from memory. Thank you also to 
+          <a href="https://commons.gc.cuny.edu/members/jallred/">Jeff Allred</a> for encouraging this project in all of its versions.
         </p>
   </div>
